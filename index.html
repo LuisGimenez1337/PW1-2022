@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="../PW1-2022/img/icono.png" rel="icon" type="image/png">
+    <title>Basico</title>
+
 </head>
-<body style="background-color:powderblue;">
-    <h1>Esto es un titulo</h1>
-    <h2>Esto es un titulo</h2>
+<body>
+    <h1 id="titulocss">Esto es un titulo con css</h1>
+    <h2 id="inicio">Esto es un titulo</h2>
     <h3>Esto es un titulo</h3>
 
-    <p>Esto es un parrafo.</p>
+    <p class="parrafocss">Esto es un parrafo con css.</p>
     <p>Esto es otro parrafo.</p>
+    <p>Esto es un <br> parrafo con salto de linea.</p>
+    <p style="font-size:48px">
+        &#128512; &#128516; &#128525; &#128151;
+        </p>
+    <p style="color:rgb(147, 248, 32);">esto es un parrafo color verde limon.</p>
 
-    <a href="https://www.w3schools.com">Esto es un link</a>
+    <a href="https://www.w3schools.com" target="_blank">Esto es un link</a>
     
     <br>
 
-    <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+    <img src="img/w3schools.jpg" alt="W3Schools.com" width="104" height="142">
     <br>
-    <img src="w3schools.jpg" alt="Esto es el logo de w3schools">
-    <br>
-    <p style="color:rgb(4, 0, 255);">Prueba de estilo parrafo</p>
+    <img src="img/w3schools.jpg" alt="Esto es el logo de w3schools">
     <br>
     <h1 title="Soy un titulo">Posa el cursor encima</h1>
     <br>
@@ -36,15 +42,15 @@
     <p title="Luis 'Gimenez' Valdez">Luis con comilla simple</p>
 
     <br>
-    <h1>Encabezado 1</h1>
+    <h1 style="font-size:10vw">Encabezado 1 redimencionable</h1>
     <h2>Encabezado 2</h2>
     <h3>Encabezado 3</h3>
     <h4>Encabezado 4</h4>
     <h5>Encabezado 5</h5>
-    <h6>Encabezado 6</h6>
+    <h6>Encabezado 6  &euro;</h6>
 
     <br>
-    <h1 style="font-size:60px;">Encabezado 1 con style</h1>
+    <h1 style="font-size:80px;">Encabezado 1 con style</h1>
     <br>
 
     <p>Un párrafo siempre comienza en una nueva línea, y los navegadores agregan automáticamente algún espacio en blanco
@@ -57,9 +63,12 @@
     <hr>
 
     <pre>
-        El texto dentro de un elemento se muestra en una 
-        fuente de ancho fijo (generalmente Courier),
-         y conserva tanto los espacios como los saltos de línea
+        El texto dentro de un 
+        elemento se muestra en una 
+        fuente de ancho fijo 
+        (generalmente Courier),
+         y conserva tanto los 
+         espacios como los saltos de línea
     </pre>
     
     <hr>
@@ -75,13 +84,13 @@
     <p style="font-size:50px;">Soy grande</p>
 
 
-    <h1 style="background-color:rgb(40, 170, 47);">Color de fondo</h1>
-    <p style="background-color:rgb(117, 52, 101);">La propiedad CSS define el color de fondo de un elemento HTML</p>
+    <h1 style="background-color:rgb(180, 44, 34);">Color de fondo</h1>
+    <p style="background-color:rgb(228, 99, 196);">La propiedad CSS define el color de fondo de un elemento HTML</p>
 
-    <h1 style="color:blue;">Color del texto</h1>
-    <p style="color:red;">La propiedad CSS define el color del texto para un elemento HTML:color</p>
+    <h1 style="color:rgb(207, 44, 139);">Color del texto</h1>
+    <p style="color:rgb(28, 221, 147);">La propiedad CSS define el color del texto para un elemento HTML:color</p>
 
-    <h1 style="font-family:verdana;">Fuentes</h1>
+    <h1 style="font-family:Architect;">Fuentes</h1>
     <p style="font-family:courier;">La propiedad CSS define la fuente que se utilizará para un elemento HTML:font-family</p>
 
     <h1 style="font-size:300%;">Tamaño del texto</h1>
@@ -92,39 +101,39 @@
     <br>
 
     <pre>
-        &lt;b&gt; - <b>Texto en negrita</b>
-        &lt;strong&gt; <strong>- Texto importante</strong>
-        &lt;i&gt; <i>- Texto en cursiva</i>
-        &lt;em&gt; <em>- Texto enfatizado</em>
-        &lt;mark&gt; <mark>- Texto marcado</mark>
-        &lt;small&gt; <small>- Texto mas pequeño</small>
-        &lt;del&gt; <del>- Texto borrado</del>
-        &lt;ins&gt; <ins>- Texto insertado</ins>
-        &lt;sub&gt; <sub>- Subindice</sub>
-        &lt;sup&gt; <sup>- Superindice</sup>
+        <b>Texto en negrita</b>
+        <strong> Texto importante</strong>
+        <i> Texto en cursiva</i>
+        <em> Texto enfatizado</em>
+         <mark> Texto marcado</mark>
+         <small> Texto mas pequeño</small>
+         <del> Texto borrado</del>
+         <ins> Texto insertado</ins>
+         <sub> Subindice</sub>
+         <sup> Superindice</sup>
 
-    </pre> <!---    &lt;  &gt;     -->
+    </pre> <!---    <  >     -->
  
     <blockquote cite="https://www.w3schools.com/html/html_quotation_elements.asp">
-        El elemento HTML define una sección que se cita de otra fuente.&lt;blockquote&gt;
-        Los navegadores suelen aplicar sangría a los elementos.&lt;blockquote&gt;
+        El elemento HTML define una sección que se cita de otra fuente.<blockquote>
+        Los navegadores suelen aplicar sangría a los elementos.<blockquote>
     </blockquote>
     <br>
     <p>
         <q>
-            La etiqueta HTML define una cita corta.&lt;q&gt;
+            La etiqueta HTML define una cita corta.<q>
             Los navegadores normalmente insertan comillas alrededor de la cita.
         </q>
     </p>
 
     <p>
-        La etiqueta <abbr>HTML</abbr>> define una abreviatura o un acrónimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".&lt;abbr&gt;
+        La etiqueta <abbr>HTML</abbr>> define una abreviatura o un acrónimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".<abbr>
         Marcar abreviaturas puede proporcionar información útil a los navegadores, sistemas de traducción y motores de búsqueda. 
         Propina: Utilice el atributo de título global para mostrar la descripción de la abreviatura/acrónimo cuando pase el ratón por encima del elemento.
     </p>
     
     <p>
-        La etiqueta HTML define la información de contacto del autor/propietario de un documento o un artículo.&lt;address&gt;&lt;/address&gt;
+        La etiqueta HTML define la información de contacto del autor/propietario de un documento o un artículo.<address></address>
     </p>
     <p>
         <address>
@@ -136,9 +145,9 @@
         </address>
     </p>
     <p>
-        La etiqueta HTML define el título de una obra creativa (por ejemplo, un libro, un poema, una canción, una película, una pintura, una escultura, etc.).&lt;cite&gt;&lt;/cite&gt;
+        La etiqueta HTML define el título de una obra creativa (por ejemplo, un libro, un poema, una canción, una película, una pintura, una escultura, etc.).<cite></cite>
     </p>
-    <img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+    <img src="img/img_the_scream.jpg" width="220" height="277" alt="The Scream">
     <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
 
     <p>Si su navegador admite anulación bidireccional (bdo), la siguiente línea se escribirá de derecha a izquierda (rtl):</p>
@@ -154,7 +163,7 @@
     <h1 style="background-color:DodgerBlue;">Color de Fondo</h1>
     <p style="background-color:Tomato;">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Ut wisi enim ad minim veniam, <span style="border: 1px solid rgb(248, 248, 248)">quis nostrud exerci tation ullamcorper </span>suscipit lobortis nisl ut aliquip ex ea commodo consequat.
     </p>
 
     <h3 style="color:Tomato;">Color de Texto</h3>
@@ -166,5 +175,173 @@
     <h1 style="border:2px solid Tomato;">Color del borde</h1>
     <h1 style="border:2px solid DodgerBlue;">Color del borde</h1>
     <h1 style="border:2px solid Violet;">Color del borde</h1>
+
+    <h2>HTML Tabla</h2>
+
+<table>
+  <tr>
+    <th>Compañia</th>
+    <th colspan="2">Contacto y Pais</th>
+    
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+<h2>HTML listas </h2>
+<h3>lista sin ordenar ul</h3>
+<ul>
+  <li>cafe</li>
+  <li>Te</li>
+  <li>leche</li>
+</ul>
+<h3>lista ordenada ol</h3>
+<ol>
+    <li>cafe</li>
+  <li>Te</li>
+  <li>leche</li>
+  </ol>
+  <h3>lista descriptiva dl</h3>
+  <dl>
+    <dt>cafe</dt>
+    <dd>- bebida caliente negra</dd>
+    <dt>leche</dt>
+    <dd>- bebida fria blanca</dd>
+  </dl>
+  
+  <iframe src="demo_iframe.htm" name="iframe_a" height="200" width="300" title="Iframe Example"></iframe>
+  <p>El boton conecta la pagina de w3schools con el iframe</p>
+  <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+  <p>Aqui, un JavaScript que cambia los valores del src (source) atributo de una imagen.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "../PW1-2022/img/pic_bulboff.gif"
+  } else {
+    pic = "../PW1-2022/img/pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="../PW1-2022/img/pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<h2>CSS Layout Flexbox</h2>
+
+
+<header id="header">
+  <h2>Ciudades</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>London es la capital de inglaterra. la ciudad mas popular del reino unido, con un area metropolitana de mas de 13 millones de habitantes.</p>
+    <p>sobre el rio thames.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+
+<p>El kbd elemento es usado para definir una entrada de tecladdo:</p>
+
+<p>guarda el documento presionando <kbd>Ctrl + S</kbd></p>
+
+</body>
+
+<pre>
+    <code>
+    x = 5;
+    y = 6;
+    z = x + y;
+    </code>
+    </pre>
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, 
+        where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+        <table>
+            <tbody><tr>
+            <th style="width:20%">Etiqueta</th>
+            <th>Descripcion</th>
+            </tr>
+            <tr>
+            <td>&lt;code&gt;</td>
+            <td>Define codigo de programacion</td>
+            </tr>
+            <tr>
+            <td>&lt;kbd&gt;</td>
+            <td>Define entra de teclado&nbsp;</td>
+            </tr>
+            <tr>
+            <td>&lt;samp&gt;</td>
+            <td>Define salida de computadora</td>
+            </tr>
+            <tr>
+            <td>&lt;var&gt;</td>
+            <td>Define una variable</td>
+            </tr>
+            <tr>
+            <td>&lt;pre&gt;</td>
+            <td>Define texto pre formateado</td>
+            </tr>
+            </tbody></table>
+            <h3>Las diferencias más importantes de HTML y XHTML</h3>
+            <p>El atributo xmlns en html es obligatorio <br>
+                html, head, title y body son obligatorios<br>
+                Los elementos siempre deben estar correctamente anidados<br>
+                Los elementos siempre deben estar cerrados .<br>
+                Los elementos siempre deben estar en minúsculas<br>
+                Los nombres de los atributos siempre deben estar en minúsculas<br>
+                Los valores de los atributos siempre se deben citar<br>
+                La minimización de atributos está prohibida.<br>
+            </p>
+
+  <a href="#inicio">Volver al inicio</a>
 </body>
 </html>

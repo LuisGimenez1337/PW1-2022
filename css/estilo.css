@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(236, 157, 247);
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+       
+      
+  }
+  #titulocss {
+    color: blue;
+    font-family: verdana;
+    font-size: 150%;
+  }
+  .parrafocss {
+    color: red;
+    font-family: courier;
+    font-size: 90%;
+    border: 2px solid powderblue;
+    padding: 30px;
+    margin: 50px;
+    
+  }
+  a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+  
+  td, th {
+    border: 1px solid #d0d321;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    background-color: #dcf83d;
+    border-radius: 10px;
+    border-style: double;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f7c336;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+ 
+  #header {
+    background-color: rgb(148, 1, 1);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+ section {
+    display: -webkit-flex;
+    display: flex;
+  }
+ 
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: rgb(192, 79, 79);
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+ 
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #b44d4d;
+    padding: 10px;
+  }
+  
+  footer {
+    background-color: rgb(212, 45, 45);
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+ 
