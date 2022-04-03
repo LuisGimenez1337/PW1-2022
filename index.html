@@ -1,336 +1,320 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link href="../PW1-2022/img/icono.png" rel="icon" type="image/png">
-    <script  src="js/primerjs.js"></script>
-    <title>Basico</title>
+<html lang="Es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Luis Gimenez Programacion Web 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        
+    </head>
 
-</head>
 <body>
-    <h1 id="titulocss">Esto es un titulo con css</h1>
-    <h2 id="inicio">Esto es un titulo</h2>
-    <h3>Esto es un titulo</h3>
 
-    <p class="parrafocss">Esto es un parrafo con css.</p>
-    <p>Esto es otro parrafo.</p>
-    <p>Esto es un <br> parrafo con salto de linea.</p>
-    <p style="font-size:48px">
-        &#128512; &#128516; &#128525; &#128151;
-        </p>
-    <p style="color:rgb(147, 248, 32);">esto es un parrafo color verde limon.</p>
 
-    <a href="https://www.w3schools.com" target="_blank">Esto es un link</a>
+
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#top">Inicio</a></li>
+                        <li><a href="#featured">Portafolio</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a href="#">Luis<em>Gimenez</em></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#top">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#featured">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Portafolio
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <div class="slider">
+            <div class="Modern-Slider content-section" id="top">
+                <!-- Item -->
+                <div class="item item-1">
+                    <div class="img-fill">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div>
+                          <h1>Fondos lindos</h1>
+                          <p>Por que? para organizar las cosas mejor la verdad</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
+                <!-- Item -->
+                <div class="item item-2">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        
+                    </div>
+                </div>
+                <!-- // Item -->
+                <!-- Item -->
+                <div class="item item-3">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        
+                    </div>
+                </div>
+                <!-- // Item -->
+            </div>
+        </div>
+
+
+        <div class="page-content">
+            <section id="featured" class="content-section">
+                <div class="section-heading">
+                    <h1>Portafolio de<br><em>Codigos</em></h1>
+                    <p>Presentacion de html.</p>
+                </div>
+                <div class="section-content">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image">
+                               
+                                <iframe src="html/html1.htm" name="iframe_a" height="400" width="335" title="Iframe Example"></iframe>
+                                <div class="featured-button button">
+                                    <a href="html/html1.htm">Html 1</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Html 1 </h4>
+                                <span>Ejemplo 1</span>
+        
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                
+                                <iframe src="html/html2.htm" name="iframe_a" height="400" width="335" title="Iframe Example"></iframe>
+                                <div class="featured-button button">
+                                    <a href="html/html2.htm">Html 2</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Html 2 </h4>
+                                <span>Ejemplo 2</span>
+        
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <iframe src="html/html3.htm" name="iframe_a" height="400" width="335" title="Iframe Example"></iframe>
+                                <div class="featured-button button">
+                                    <a href="html/html3.htm">Html 3</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Html 3 </h4>
+                                <span>Ejemplo 3</span>
+        
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <iframe src="html/html4.htm" name="iframe_a" height="400" width="335" title="Iframe Example"></iframe>
+                                <div class="featured-button button">
+                                    <a href="html/html4.htm">Html 4</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Html 4 </h4>
+                                <span>Ejemplo 4</span>
+        
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <iframe src="html/html5.htm" name="iframe_a" height="400" width="335" title="Iframe Example"></iframe>
+                                <div class="featured-button button">
+                                    <a href="html/html5.htm">Html 5</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Html 5 </h4>
+                                <span>Ejemplo 5</span>
+        
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <iframe src="html/html6.htm" name="iframe_a" height="400" width="335" title="Iframe Example"></iframe>
+                                <div class="featured-button button">
+                                    <a href="html/html6.htm">Html 6</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Html 6 </h4>
+                                <span>Ejemplo 6</span>
+        
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <iframe src="html/html7.htm" name="iframe_a" height="400" width="335" title="Iframe Example"></iframe>
+                                <div class="featured-button button">
+                                    <a href="html/html7.htm">Html 7</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Html 7 </h4>
+                                <span>Ejemplo 7</span>
+        
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <iframe src="html/html8.htm" name="iframe_a" height="400" width="335" title="Iframe Example"></iframe>
+                                <div class="featured-button button">
+                                    <a href="html/html8.htm">Html 8</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Html 8 </h4>
+                                <span>Ejemplo 8</span>
+        
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <iframe src="html/html9.htm" name="iframe_a" height="400" width="335" title="Iframe Example"></iframe>
+                                <div class="featured-button button">
+                                    <a href="html/html9.htm">Html 9</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Html 9 </h4>
+                                <span>Ejemplo 9</span>
+        
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <iframe src="html/html10.htm" name="iframe_a" height="400" width="335" title="Iframe Example"></iframe>
+                                <div class="featured-button button">
+                                    <a href="html/html10.htm">Html 10</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Html 10 </h4>
+                                <span>Ejemplo 10</span>
+        
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <iframe src="html/html11.htm" name="iframe_a" height="400" width="335" title="Iframe Example"></iframe>
+                                <div class="featured-button button">
+                                    <a href="html/html11.htm">Html 11</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Html 11 </h4>
+                                <span>Ejemplo 11</span>
+        
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
     
-    <br>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-    <img src="img/w3schools.jpg" alt="W3Schools.com" width="104" height="142">
-    <br>
-    <img src="img/w3schools.jpg" alt="Esto es el logo de w3schools">
-    <br>
-    <h1 title="Soy un titulo">Posa el cursor encima</h1>
-    <br>
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
 
-    <p title=Informacion Programacion Web>
-        No puede omitir comillas alrededor de un valor de atributo
-         si el valor contiene espacios.
-    </p>
-    <br>
-    <p title='Luis "Gimenez" Valdez'>Luis con doble comillas</p>
-    <p title="Luis 'Gimenez' Valdez">Luis con comilla simple</p>
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
 
-    <br>
-    <h1 style="font-size:10vw">Encabezado 1 redimencionable</h1>
-    <h2>Encabezado 2</h2>
-    <h3>Encabezado 3</h3>
-    <h4>Encabezado 4</h4>
-    <h5>Encabezado 5</h5>
-    <h6>Encabezado 6  &euro;</h6>
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
 
-    <br>
-    <h1 style="font-size:80px;">Encabezado 1 con style</h1>
-    <br>
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
 
-    <p>Un párrafo siempre comienza en una nueva línea, y los navegadores agregan automáticamente algún espacio en blanco
-    (un margen) antes y después de un párrafo.</p>
-    
-    <br>
-    <hr>
-    <h1>Reglas horizontales HTML</h1>
-    <p>La etiqueta define un salto temático en una página HTML y se muestra con mayor frecuencia como una regla horizontal.</p>
-    <hr>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <pre>
-        El texto dentro de un 
-        elemento se muestra en una 
-        fuente de ancho fijo 
-        (generalmente Courier),
-         y conserva tanto los 
-         espacios como los saltos de línea
-    </pre>
-    
-    <hr>
-
-    <p>
-        El atributo HTML se utiliza para agregar estilos a un elemento, como color, fuente, tamaño y más.
-    </p>
-    <br>
-
-    <p>Soy normal</p>
-    <p style="color:red;">Soy rojo</p>
-    <p style="color:blue;">Soy azul</p>
-    <p style="font-size:50px;">Soy grande</p>
-
-
-    <h1 style="background-color:rgb(180, 44, 34);">Color de fondo</h1>
-    <p style="background-color:rgb(228, 99, 196);">La propiedad CSS define el color de fondo de un elemento HTML</p>
-
-    <h1 style="color:rgb(207, 44, 139);">Color del texto</h1>
-    <p style="color:rgb(28, 221, 147);">La propiedad CSS define el color del texto para un elemento HTML:color</p>
-
-    <h1 style="font-family:Architect;">Fuentes</h1>
-    <p style="font-family:courier;">La propiedad CSS define la fuente que se utilizará para un elemento HTML:font-family</p>
-
-    <h1 style="font-size:300%;">Tamaño del texto</h1>
-    <p style="font-size:160%;">La propiedad CSS define el tamaño de texto de un elemento HTML:font-size</p>
-
-    <h1 style="text-align:center;">Alineación de texto</h1>
-    <p style="text-align:center;">La propiedad CSS define la alineación horizontal del texto para un elemento HTML:text-align</p>
-    <br>
-
-    <pre>
-        <b>Texto en negrita</b>
-        <strong> Texto importante</strong>
-        <i> Texto en cursiva</i>
-        <em> Texto enfatizado</em>
-         <mark> Texto marcado</mark>
-         <small> Texto mas pequeño</small>
-         <del> Texto borrado</del>
-         <ins> Texto insertado</ins>
-         <sub> Subindice</sub>
-         <sup> Superindice</sup>
-
-    </pre> <!---    <  >     -->
- 
-    <blockquote cite="https://www.w3schools.com/html/html_quotation_elements.asp">
-        El elemento HTML define una sección que se cita de otra fuente.<blockquote>
-        Los navegadores suelen aplicar sangría a los elementos.<blockquote>
-    </blockquote>
-    <br>
-    <p>
-        <q>
-            La etiqueta HTML define una cita corta.<q>
-            Los navegadores normalmente insertan comillas alrededor de la cita.
-        </q>
-    </p>
-
-    <p>
-        La etiqueta <abbr>HTML</abbr>> define una abreviatura o un acrónimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".<abbr>
-        Marcar abreviaturas puede proporcionar información útil a los navegadores, sistemas de traducción y motores de búsqueda. 
-        Propina: Utilice el atributo de título global para mostrar la descripción de la abreviatura/acrónimo cuando pase el ratón por encima del elemento.
-    </p>
-    
-    <p>
-        La etiqueta HTML define la información de contacto del autor/propietario de un documento o un artículo.<address></address>
-    </p>
-    <p>
-        <address>
-            Written by John Doe.<br>
-            Visit us at:<br>
-            Example.com<br>
-            Box 564, Disneyland<br>
-            USA
-        </address>
-    </p>
-    <p>
-        La etiqueta HTML define el título de una obra creativa (por ejemplo, un libro, un poema, una canción, una película, una pintura, una escultura, etc.).<cite></cite>
-    </p>
-    <img src="img/img_the_scream.jpg" width="220" height="277" alt="The Scream">
-    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-
-    <p>Si su navegador admite anulación bidireccional (bdo), la siguiente línea se escribirá de derecha a izquierda (rtl):</p>
-    <bdo dir="rtl">Esta línea se escribirá de derecha a izquierda.</bdo>
-    <br>
-
-    <!--
-        <p>Si su navegador admite anulación bidireccional (bdo), la siguiente línea se escribirá de derecha a izquierda (rtl):</p>
-        <bdo dir="rtl">Esta línea se escribirá de derecha a izquierda.</bdo>
-        <br>
-    -->
-
-    <h1 style="background-color:DodgerBlue;">Color de Fondo</h1>
-    <p style="background-color:Tomato;">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-        Ut wisi enim ad minim veniam, <span style="border: 1px solid rgb(248, 248, 248)">quis nostrud exerci tation ullamcorper </span>suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-    </p>
-
-    <h3 style="color:Tomato;">Color de Texto</h3>
-
-    <p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-
-    <p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-    <h1 style="border:2px solid Tomato;">Color del borde</h1>
-    <h1 style="border:2px solid DodgerBlue;">Color del borde</h1>
-    <h1 style="border:2px solid Violet;">Color del borde</h1>
-
-    <h2>HTML Tabla</h2>
-
-<table>
-  <tr>
-    <th>Compañia</th>
-    <th colspan="2">Contacto y Pais</th>
-    
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
-</table>
-<h2>HTML listas </h2>
-<h3>lista sin ordenar ul</h3>
-<ul>
-  <li>cafe</li>
-  <li>Te</li>
-  <li>leche</li>
-</ul>
-<h3>lista ordenada ol</h3>
-<ol>
-    <li>cafe</li>
-  <li>Te</li>
-  <li>leche</li>
-  </ol>
-  <h3>lista descriptiva dl</h3>
-  <dl>
-    <dt>cafe</dt>
-    <dd>- bebida caliente negra</dd>
-    <dt>leche</dt>
-    <dd>- bebida fria blanca</dd>
-  </dl>
-  
-  <iframe src="demo_iframe.htm" name="iframe_a" height="200" width="300" title="Iframe Example"></iframe>
-  <p>El boton conecta la pagina de w3schools con el iframe</p>
-  <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
-
-  <p>Aqui, un JavaScript que cambia los valores del src (source) atributo de una imagen.</p>
-
-<img id="myImage" src="img/pic_bulboff.gif" width="100" height="180">
-
-<p>
-<button type="button" onclick="light(1)">Light On</button>
-<button type="button" onclick="light(0)">Light Off</button>
-</p>
-
-<h2>CSS Layout Flexbox</h2>
-
-
-<header id="header">
-  <h2>Ciudades</h2>
-</header>
-
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>London</h1>
-    <p>London es la capital de inglaterra. la ciudad mas popular del reino unido, con un area metropolitana de mas de 13 millones de habitantes.</p>
-    <p>sobre el rio thames.</p>
-  </article>
-</section>
-
-<footer>
-  <p>Footer</p>
-</footer>
-
-
-<p>El kbd elemento es usado para definir una entrada de tecladdo:</p>
-
-<p>guarda el documento presionando <kbd>Ctrl + S</kbd></p>
-
-</body>
-
-<pre>
-    <code>
-    x = 5;
-    y = 6;
-    z = x + y;
-    </code>
-    </pre>
-    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, 
-        where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
-
-        <table>
-            <tbody><tr>
-            <th style="width:20%">Etiqueta</th>
-            <th>Descripcion</th>
-            </tr>
-            <tr>
-            <td>&lt;code&gt;</td>
-            <td>Define codigo de programacion</td>
-            </tr>
-            <tr>
-            <td>&lt;kbd&gt;</td>
-            <td>Define entra de teclado&nbsp;</td>
-            </tr>
-            <tr>
-            <td>&lt;samp&gt;</td>
-            <td>Define salida de computadora</td>
-            </tr>
-            <tr>
-            <td>&lt;var&gt;</td>
-            <td>Define una variable</td>
-            </tr>
-            <tr>
-            <td>&lt;pre&gt;</td>
-            <td>Define texto pre formateado</td>
-            </tr>
-            </tbody></table>
-            <h3>Las diferencias más importantes de HTML y XHTML</h3>
-            <p>El atributo xmlns en html es obligatorio <br>
-                html, head, title y body son obligatorios<br>
-                Los elementos siempre deben estar correctamente anidados<br>
-                Los elementos siempre deben estar cerrados .<br>
-                Los elementos siempre deben estar en minúsculas<br>
-                Los nombres de los atributos siempre deben estar en minúsculas<br>
-                Los valores de los atributos siempre se deben citar<br>
-                La minimización de atributos está prohibida.<br>
-            </p>
-
-  <a href="#inicio">Volver al inicio</a>
 </body>
 </html>

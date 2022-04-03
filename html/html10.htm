@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Selectores</h2>
+    <input type="button" onclick="alert('Hola mundo!')" value="Aprieta!">
+    <form>
+        <label for="favcolor">Selecciona tu color favorito:</label>
+        <input type="color" id="favcolor" name="favcolor">
+      </form>
+      <form>
+        <label for="birthday">Cumpleaños:</label>
+        <input type="date" id="birthday" name="birthday">
+      </form>
+      <form>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email">
+      </form>
+      <form>
+        <label for="myfile">Selecciona un archivo:</label>
+        <input type="file" id="myfile" name="myfile">
+      </form>
+      <form>
+        <label for="quantity">Cantidad:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+      </form>
+      <form>
+        <label for="appt">Hora:</label>
+        <input type="time" id="appt" name="appt">
+      </form>
+    <h2>Cajas de texto</h2>
+
+<form>
+  <label for="fname">Primer nombre:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Apellido:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+<form>
+    <label for="username">Usuario:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="pwd">Contraseña:</label><br>
+    <input type="password" id="pwd" name="pwd">
+  </form>
+
+<p>Nota: Hasta 20 caracteres de texto permitidos</p>
+
+<h2>botones radiales</h2>
+
+<p>escoge tu lenguaje web favorito:</p>
+<form>
+      <input type="radio" id="html" name="fav_lenguaje" value="HTML" >
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_lenguaje" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_lenguaje" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+    </form> 
+    
+    <form>
+        <textarea name="message" rows="10" cols="30">El gato juega en el jardin.</textarea>
+        <br><br>
+        <input type="reset">
+      </form>
+
+    
+
+
+    <form>
+        <label for="cars">escoge un auto:</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat" selected>Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+        <input type="reset">
+      </form>
+
+
+<h2>Seleccion multiple</h2>
+<p>La <strong>input type="checkbox"</strong> define la seleccion multiple:</p>
+
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> tengo bicicleta</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> tengo auto</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> tengo barco</label><br><br>
+  <input type="reset" value="reset">
+</form> 
+
+
+</body>
+</html>

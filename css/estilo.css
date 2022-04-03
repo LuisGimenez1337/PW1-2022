@@ -1,12 +1,13 @@
 body {
-    background-color: rgb(236, 157, 247);
-    background-image: url('../img/fondo.jpg');
+    background-color: rgb(251, 252, 200);
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
        
       
   }
+
+
   #titulocss {
     color: blue;
     font-family: verdana;
@@ -21,18 +22,7 @@ body {
     margin: 50px;
     
   }
-  a:link, a:visited {
-    background-color: #f44336;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
   
-  a:hover, a:active {
-    background-color: red;
-  }
 
   table {
     font-family: arial, sans-serif;
