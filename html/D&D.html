@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+    <script  src="../js/script.js"defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="dropZone">
+    <div
+      id="dropBox1"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)"
+    >
+      <p>Pez</p>
+    </div>
+    <div
+      id="dropBox2"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)"
+    >
+      <p>Raton</p>
+    </div>
+    <div
+      id="dropBox3"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)"
+    >
+      <p>Gato</p>
+    </div>
+    <div
+      id="dropBox4"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)"
+    >
+      <p>Perro</p>
+    </div>
+  </div>
+  
+  <div
+    id="animales"
+    ondrop="drop(event)"
+    ondragover="allowDrop(event)"
+  >
+    <img
+      id="Gato"
+      src="../img/gato.jpg"
+      draggable="true"
+      ondragstart="drag(event)"
+      width="300"
+    />
+  
+    <img
+      id="Perro"
+      src="../img/perro.jpg"
+      draggable="true"
+      ondragstart="drag(event)"
+      width="300"
+    />
+  
+    <img
+      id="Raton"
+      src="../img/raton.png"
+      draggable="true"
+      ondragstart="drag(event)"
+      width="300"
+    />
+  
+    <img
+      id="Pez"
+      src="../img/pez.png"
+      draggable="true"
+      ondragstart="drag(event)"
+      width="300"
+    />
+  </div>
+</body>
+</html>
+  
+  
