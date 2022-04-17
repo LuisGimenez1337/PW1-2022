@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clickCounter() {
+          if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+              localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+              localStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "Has presionado el boton " + localStorage.clickcount + " veces.";
+          } else {
+            document.getElementById("result").innerHTML = "tu navegador no soporta el  almacenamiento local...";
+          }
+        }
+        </script>
+        <script>
+        function clickCounterR() {
+            if (typeof(Storage) !== "undefined") {
+              if (sessionStorage.clickcount) {
+                sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+              } else {
+                sessionStorage.clickcount = 1;
+              }
+              document.getElementById("resultado").innerHTML = "Has presionado el boton " + sessionStorage.clickcount + " veces esta sesion.";
+            } else {
+              document.getElementById("resultado").innerHTML = "tu navegador no soporta el  almacenamiento local...";
+            }
+          }
+          </script>
+</head>
+<body>
+    
+<p><button onclick="clickCounter()" type="button">Presiona!</button></p>
+<div id="result"></div>
+<p>Aprieta el boton para ver el contador aumentar.</p>
+<p>Si cierras la ventana o el navegador el contador del boton igual seguira aumentando, no se resetea.</p>
+
+<p><button onclick="clickCounterR()" type="button">Presiona!</button></p>
+<div id="resultado"></div>
+<p>Aprieta el boton para ver el contador aumentar.</p>
+<p>Si cierras la ventana o el navegador el contador del boton se resetea.</p>
+    
+</body>
+</html>
