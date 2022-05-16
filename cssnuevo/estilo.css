@@ -1,0 +1,359 @@
+
+    body {
+      background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+    }
+    .balls {
+        border-radius: 50%;
+        background: linear-gradient(
+          35deg,
+          #ccffff,
+          #ffcccc
+        );
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+        animation-name: bounce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      #ball1 {
+        left: 27%;
+        animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+      }
+      #ball2 {
+        left: 56%;
+        animation-timing-function: ease-out;
+      }
+      .balls1 {
+        border-radius: 50%;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        top: 60%;
+        animation-name: jump;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      #red {
+        background: red;
+        left: 25%;
+        animation-timing-function: linear;
+      }
+      #blue {
+        background: blue;
+        left: 50%;
+        animation-timing-function: ease-out;
+      }
+      #green {
+        background: green;
+        left: 75%;
+        animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+      }
+    
+      @keyframes jump {
+        50% {
+          top: 10%;
+        }
+      }
+    
+      @keyframes bounce {
+        0% {
+          top: 0px;
+        }
+        100% {
+          top: 249px;
+        }
+      }
+
+      #hover {
+        width: 70%;
+        height: 100px;
+        margin:  50px auto;
+        background: linear-gradient(
+          53deg,
+          #ccfffc,
+          #ffcccf
+        );
+      }
+      #hover:hover{
+        transform: scale(1.1);
+      }
+
+      #top,#bottom {
+        width: 70%;
+        height: 100px;
+        margin:  50px auto;
+      }
+      #top {
+        background-color: red;
+        transform: skewY(-10deg);
+      }
+      #bottom {
+        background-color: blue;
+        transform: skewX(24deg);
+    
+      }
+      .center {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: 25px 10px 0px 0px blue;
+      }
+
+      .heart {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: pink;
+        height: 50px;
+        width: 50px;
+        transform:rotate(-45deg) ;
+      }
+      .heart::after {
+        background-color: pink;
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0px;
+        left: 25px;
+      }
+      .heart::before {
+        content: "";
+        background-color: pink;
+        border-radius: 50%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: 0px;
+      }
+
+      #rect {
+        height: 40px;
+        width: 70%;
+        background: black;
+        margin: 50px auto;
+        border-radius: 5px;
+        position: relative;
+        animation-name: rainbow;
+      animation-duration: 4s;
+    
+      }
+      @keyframes rainbow {
+        0% {
+          background-color: blue;
+          top: 0px;
+          left: 0px;
+    
+        }
+        50% {
+          background-color: green;
+          top: 50px;
+          left: 25px;
+    
+        }
+        100% {
+          background-color: yellow;
+          top: 0px;
+          left: -25px;
+    
+        }
+      }
+    button {
+        border-radius: 5px;
+        color: white;
+        background-color: #0F5897;
+        padding: 5px 10px 8px 10px;
+      }
+    
+      button:hover {
+        animation-name: background-color;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+      }
+    @keyframes background-color {
+        100% {
+          background-color:#4791d0;
+        }
+      }
+      
+      #ballA {
+        width: 70px;
+        height: 70px;
+        margin: 50px auto;
+        position: fixed;
+        left: 20%;
+        border-radius: 50%;
+        
+        background: linear-gradient(
+          35deg,
+          #099393,
+          #e50f0f
+        );
+        animation-name: fade;
+        animation-duration: 3s;
+      }
+    
+      @keyframes fade {
+        50% {
+          left: 60%;
+          opacity: 0.1;
+        }
+      }
+
+      #ballB {
+        width: 100px;
+        height: 100px;
+        margin: 50px auto;
+        position: relative;
+        border-radius: 50%;
+        background: linear-gradient(
+          35deg,
+          #ccffff,
+          #ffcccc
+        );
+        animation-name: bounce;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+    
+      @keyframes bounce{
+        0% {
+          top: 0px;
+        }
+        50% {
+          top: 249px;
+          width: 130px;
+          height: 70px;
+        }
+        100% {
+          top: 0px;
+        }
+      }
+      .back {
+        position: fixed;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        animation-name: backdiv;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    
+      }
+    
+      .heart1 {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: pink;
+        height: 50px;
+        width: 50px;
+        transform: rotate(-45deg);
+        animation-name: beat;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    
+      }
+      .heart1:after {
+        background-color: pink;
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0px;
+        left: 25px;
+      }
+      .heart1:before {
+        background-color: pink;
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: 0px;
+      }
+    
+      @keyframes backdiv {
+        50% {
+          background: #ffe6f2;
+        }
+      }
+    
+      @keyframes beat {
+        0% {
+          transform: scale(1) rotate(-45deg);
+        }
+        50% {
+          transform: scale(0.6) rotate(-45deg);
+        }
+      }
+
+      .stars {
+        background-color: white;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        animation-iteration-count: infinite;
+      }
+    
+      .star-1 {
+        margin-top: 15%;
+        margin-left: 60%;
+        animation-duration: 1s;
+        animation-name: twinkle;
+      }
+    
+      .star-2 {
+        margin-top: 25%;
+        margin-left: 25%;
+        animation-duration: 0.9s;
+        animation-name: twinkle;
+      }
+    
+      .star-3 {
+        margin-top: 10%;
+        margin-left: 50%;
+        animation-duration: 1.1s;
+        animation-name: twinkle;
+      }
+    
+      @keyframes twinkle {
+        20% {
+          transform: scale(0.5);
+          opacity: 0.5;
+        }
+      }
+    
+      #back1 {
+        position: fixed;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+      }
+    
