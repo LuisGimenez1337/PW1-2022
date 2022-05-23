@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Codecademy_Curso</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper d-flex align-items-stretch">
+
+    <!-- Page Content  -->
+    <div id="content" style="background-color: #ffc200;">
+      <h1>Step 1</h1>
+      <div id='top'>
+        <div class='top side'>
+          <h2>1</h2>
+        </div>
+        <div class='top center'>
+          <h2>2</h2>
+        </div>
+        <div class='top side'>
+          <h2>3</h2>
+        </div>
+      </div>
+      <h1>Step 2</h1>
+      <div id='middle'>
+        <div class='middle side'>
+          <h2>1</h2>
+        </div>
+        <div class='middle center'>
+          <h2>2</h2>
+        </div>
+        <div class='middle side'>
+          <h2>3</h2>
+        </div>
+      </div>
+      <h1>Step 3</h1>
+      <div id='bottom'>
+        <div class='bottom side'>
+          <h2>1</h2>
+        </div>
+        <div class='bottom center'>
+          <h2>2</h2>
+        </div>
+        <div class='bottom side'>
+          <h2>3</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+<style>
+  body {
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  .top,
+  .middle,
+  .bottom {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(244, 128, 74);
+    border: 2px solid lightgrey;
+    margin: 10px 30px;
+  }
+
+  .top.side {
+    flex-grow: 1;
+  }
+
+  .top.center {
+    flex-grow: 1;
+  }
+  .middle.center {
+    flex-grow: 1;
+  }
+
+  .bottom.side {
+    flex-grow: 1;
+  }
+
+  .bottom.center {
+    flex-grow: 2;
+  }
+
+  #top,
+  #middle,
+  #bottom {
+    display: flex;
+    background-color: rgb(251, 243, 102);
+    justify-content: center;
+    min-height: 200px;
+    align-items: center;
+  }
+  #content {
+    width: 100%;
+    padding: 10%;
+    min-height: 100vh;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+</style>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Codecademy_Curso</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper d-flex align-items-stretch">
+    <!-- Page Content  -->
+    <div id="content" style="background-color: #ffc200;">
+      <h1>Flex-Direction: Row</h1>
+      <div class='container' id='row'>
+        <div class='box'>
+          <h2>1</h2>
+        </div>
+        <div class='box'>
+          <h2>2</h2>
+        </div>
+        <div class='box'>
+          <h2>3</h2>
+        </div>
+        <div class='box'>
+          <h2>4</h2>
+        </div>
+        <div class='box'>
+          <h2>5</h2>
+        </div>
+      </div>
+      <h1>Flex-Direction: Row-Reverse</h1>
+      <div class='container' id='row-reverse'>
+        <div class='box'>
+          <h2>1</h2>
+        </div>
+        <div class='box'>
+          <h2>2</h2>
+        </div>
+        <div class='box'>
+          <h2>3</h2>
+        </div>
+        <div class='box'>
+          <h2>4</h2>
+        </div>
+        <div class='box'>
+          <h2>5</h2>
+        </div>
+      </div>
+      <h1>Flex-Direction: Column</h1>
+      <div class='container' id='column'>
+        <div class='box'>
+          <h2>1</h2>
+        </div>
+        <div class='box'>
+          <h2>2</h2>
+        </div>
+        <div class='box'>
+          <h2>3</h2>
+        </div>
+        <div class='box'>
+          <h2>4</h2>
+        </div>
+        <div class='box'>
+          <h2>5</h2>
+        </div>
+      </div>
+      <h1>Flex-Direction: Column-Reverse</h1>
+      <div class='container' id='column-reverse'>
+        <div class='box'>
+          <h2>1</h2>
+        </div>
+        <div class='box'>
+          <h2>2</h2>
+        </div>
+        <div class='box'>
+          <h2>3</h2>
+        </div>
+        <div class='box'>
+          <h2>4</h2>
+        </div>
+        <div class='box'>
+          <h2>5</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+<style>
+  body {
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  .container {
+    background-color: rgb(244, 128, 74);
+    display: flex;
+    height: 600px;
+    align-items: center;
+  }
+
+  .box {
+    background-color: rgb(251, 243, 102);
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+  }
+
+  /*#row {}*/
+
+  #row-reverse {
+    flex-flow: row-reverse wrap;
+  }
+
+  #column {
+    flex-flow: column wrap;
+  }
+
+  /*#column-reverse {}*/
+  #content {
+    width: 100%;
+    padding: 10%;
+    min-height: 100vh;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+</style>

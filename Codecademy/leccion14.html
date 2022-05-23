@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Codecademy_Curso</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper d-flex align-items-stretch">
+    <!-- Page Content  -->
+    <div id="content" style="background-color: #ffc200;">
+      <div class='main'>
+        <div class='container'>
+          <div class='child'>
+            <h2>Child 1</h2>
+          </div>
+          <div class='child'>
+            <h2>Child 2</h2>
+          </div>
+          <div class='child'>
+            <h2>Child 3</h2>
+          </div>
+        </div>
+        <div class='container'></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+<style>
+  body {
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .main {
+    background-color: rgb(251, 243, 102);
+    width: 400px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+
+  .container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    background-color: rgb(244, 128, 74);
+    border: 1px solid white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .child {
+    height: 75px;
+    width: 75px;
+    background-color: rgb(251, 243, 102);
+    border: 1px solid snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #content {
+    width: 100%;
+    padding: 10%;
+    min-height: 100vh;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+</style>
