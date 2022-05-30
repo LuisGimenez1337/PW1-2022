@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulocss">juntar caracteres</h1>
+    <input id = "input" type="text" name="input"/>
+    <input id = "input2" type="text" name="input2"/>   
+        <button onclick="carac()">  
+            BOTON
+        </button>  
+        <h3 id = "modified-string" > 
+        </h3> 
+    <script>
+   
+function carac() {
+    let input = document.getElementById("input");
+    let input2 = document.getElementById("input2");  
+    
+    document.getElementById("modified-string").innerHTML= input.value+input2.value
+    
+}
+    </script>
+    
+</body>
+</html>

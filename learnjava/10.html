@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulocss">tabla cargada con js</h1>
+
+    <nav class="navbar">
+        <h1 class="nav-brand">Nutrition table</h1>
+    </nav>
+    
+    <main class="container">
+        <table class="table" id="nutrition-table">
+            <thead>
+                <tr>
+                    <th>Nutrition</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+  
+        
+    <script>
+        let htmlForCarbs = renderTableRow("Carbs", "17g");
+let htmlForProtein = renderTableRow("Protein", "19g");
+let htmlForFat = renderTableRow("Fat", "5g");
+
+const tbody = document.querySelector("#nutrition-table tbody");
+tbody.insertAdjacentHTML("beforeend", htmlForCarbs);
+tbody.insertAdjacentHTML("beforeend", htmlForProtein);
+tbody.insertAdjacentHTML("beforeend", htmlForFat);
+    function renderTableRow(label, value) {
+    return `<tr>
+    <td>${label}</td>
+    <td>${value}</td>
+</tr>`
+
+}
+
+
+    </script>
+    
+</body>
+</html>

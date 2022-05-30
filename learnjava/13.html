@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulocss">edad el siguiente año</h1>
+
+    <nav class="navbar">
+        <h1 class="nav-brand">Your age next year</h1>
+    </nav>
+    
+    <main class="container">
+        <div>
+            <label class="label" for="component-name">Enter age</label>
+            <input type="number" class="input" placeholder="Enter age" id="your-age" min="0" max="130" autocomplete="off">
+        </div>
+    
+        <p>Next year, you will be <span id="next-age"></span>.</p>
+    </main>
+
+  
+        
+    <script>
+
+const age = document.querySelector("#your-age");
+const nextAge = document.querySelector("#next-age");
+
+age.addEventListener("keyup", () => {
+    nextAge.textContent = getNextAge(age.value);
+});
+
+ function getNextAge(age) {
+return Number.parseInt(age, 10) + 1;
+
+}
+
+
+
+    </script>
+    
+</body>
+</html>

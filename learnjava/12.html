@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulocss">nombre variaciones</h1>
+
+    <nav class="navbar">
+        <h1 class="nav-brand">Name variations</h1>
+    </nav>
+    
+    <main class="container">
+        <div>
+            <label class="label" for="component-name">Enter your name</label>
+            <input type="text" class="input" placeholder="Your name" id="your-name" autocomplete="off">
+        </div>
+    
+        <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th width="200px">Variation</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Number of characters</td>
+                        <td id="answer1"></td>
+                    </tr>
+                    <tr>
+                        <td>First character</td>
+                        <td id="answer2"></td>
+                    </tr>
+                    <tr>
+                        <td>Last character</td>
+                        <td id="answer3"></td>
+                    </tr>
+                    <tr>
+                        <td>Lower case</td>
+                        <td id="answer4"></td>
+                    </tr>
+                    <tr>
+                        <td>Upper case</td>
+                        <td id="answer5"></td>
+                    </tr>
+                    <tr>
+                        <td>Capitalize</td>
+                        <td id="answer6"></td>
+                    </tr>
+                </tbody>
+        </table>
+    </main>
+
+  
+        
+    <script>
+
+const answer1 = document.querySelector("#answer1");
+const answer2 = document.querySelector("#answer2");
+const answer3 = document.querySelector("#answer3");
+const answer4 = document.querySelector("#answer4");
+const answer5 = document.querySelector("#answer5");
+const answer6 = document.querySelector("#answer6");
+
+const name = document.querySelector("#your-name");
+
+name.addEventListener("keyup", () => {
+    const value = name.value;
+
+    answer1.textContent = getNumberOfChars(value);
+    answer2.textContent = getFirstChar(value);
+    answer3.textContent = getLastChar(value);
+    answer4.textContent = getLower(value);
+    answer5.textContent = getUpper(value);
+    if (value) {
+        answer6.textContent = getCapitalized(value);
+    } else {
+        answer6.textContent = "";
+    }
+});
+function getNumberOfChars(name) {
+    // number of characters in: name
+    return name.length
+
+}
+
+/** @param {string} name */
+function getFirstChar(name) {
+    // first character of: name
+    return name.charAt(0)
+
+}
+
+/** @param {string} name */
+function getLastChar(name) {
+    // last character of: name
+    return name[name.length-1]
+
+}
+
+/** @param {string} name */
+ function getLower(name) {
+    // name all in lower case (example: "ABC" becomes "abc")
+    return name.toLowerCase()
+
+}
+
+/** @param {string} name */
+function getUpper(name) {
+    // name all in upper case (example: "abc" becomes "ABC")
+    return name.toUpperCase()
+
+}
+
+/** @param {string} name */
+function getCapitalized(name) {
+    // capitalized version of name (example: "alEX" becomes "Alex")
+return name.charAt(0).toUpperCase()+ name.slice(1).toLowerCase();
+}
+
+
+
+    </script>
+    
+</body>
+</html>
