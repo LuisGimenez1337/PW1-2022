@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+
+	<h2>JavaScript reduce()</h2>
+
+	<p>Aprieta el boton y pasara de la matriz multidimensional a una unidimensional:</p>
+
+	<button onclick="myFunction()">APRIETA</button>
+
+	<p id="test"></p>
+
+<script>
+    var myArray = [[5, 7], [2, 5, 6], [9, 5, 3, 7]];
+document.getElementById("test").innerHTML = myArray.map(e => e).join("; ");
+function myFunction() {
+   var myNewArray = myArray.reduce(function (prev, curr) {
+      return prev.concat(curr);
+   });
+   document.getElementById("test").innerHTML = myNewArray.map(e => e).join("; ");
+}
+</script>
+</body>
+
+</html>

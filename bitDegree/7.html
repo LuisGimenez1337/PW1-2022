@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <h2>
+        funcion map
+    </h2>
+    <p>
+        La función de mapa de JavaScript se aplica cuando es necesario llamar a una función para cada elemento de una matriz. <br>
+        A partir de los resultados generados, el método creará una nueva matriz. <br>
+        Por lo tanto, la primera matriz permanecerá sin cambios: todas las modificaciones de los elementos se representarán en la nueva matriz .<br> 
+        Si aplica la función de asignación de JavaScript, debe usar la nueva matriz para que el uso de este método valga la pena<br>
+    </p>
+  <p>Aprieta el boton para multiplicar todos los elementos del array por un numero en especifico cargado.</p>
+
+  <p>Multiply with: <input type="number" id="multiplyBy" value="10"></p>
+
+  <button onclick="mapFunction()">probar</button>
+
+  <p>Nuevo array: <span id="result"></span></p>
+
+
+<script>
+    var nums = [10, 30, 50, 70];
+
+function multiplyElement(num) {
+    return num * document.getElementById("multiplyBy").value;
+}
+
+function mapFunction() {
+    document.getElementById("result").innerHTML = nums.map(multiplyElement);
+}
+</script>
+</body>
+
+</html>

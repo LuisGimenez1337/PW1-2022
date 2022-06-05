@@ -32,3 +32,47 @@ function checkCookie() {
         }
     }
 }
+function firstFunction() {
+    alert("Hola\nComo estas?");
+}
+
+function firstFunction2() {
+    var r = confirm("Confirmando algo!");
+    if (r == true) {
+       x = "OK fue presionado";
+    }
+    else {
+       x = "Cancel fue presionado";
+    }
+    document.getElementById("test").innerHTML = x;
+ }
+
+ function firstFunction3() {
+    var txt;
+    var person = prompt("Porfavor introduzca su nombre completo:", "Harry Potter");
+    if (person == null || person == "") {
+        txt = "el usuario cancelo el prompt.";
+    } else {
+        txt = "Hola " + person + "! como estuvo tu dia?"
+    }
+    document.getElementById("test1").innerHTML = txt;
+}
+function clickFunction() {
+    var text = "";
+    if (document.getElementById("out").validity.rangeOverflow) {
+        text = "el valor excede el maximo";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("test").innerHTML = text;
+}
+function showAlert() {
+    alert('y luego de dos segundos!');
+}
+function download() {
+    var save = document.getElementById("example").value;
+    var blob = new Blob([save], {
+      type: "text/plain;charset=utf-8"
+    });
+    saveAs(blob, "yournewfile.txt");
+  }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <h1>Contador de parrafos</h1>
+  <h2>JavaScript HTML DOM!</h2>
+
+  <p>Hola Mundo!</p>
+
+  <p>Hola mundo de vuelta!</p>
+
+  <p id="test"></p>
+
+
+<script>
+    var myNodelist = document.querySelectorAll("p");
+document.getElementById("test").innerHTML =
+  "este documento contiene " + myNodelist.length + " parrafos.";
+</script>
+</body>
+
+</html>

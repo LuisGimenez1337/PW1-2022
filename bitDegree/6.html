@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+
+  <p>Aprieta el boton para ordenar el array.</p>
+
+  <button onclick="sampleFunction()">Probar</button>
+
+  <p id="samplePara"></p>
+
+
+<script>
+    var cars = ["Mercedes-Benz", "Nissan", "Audi", "BMW"];
+document.getElementById("samplePara").innerHTML = cars;
+
+function sampleFunction() {
+    cars.sort();
+    document.getElementById("samplePara").innerHTML = cars;
+}
+</script>
+</body>
+
+</html>
