@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Segunda Parcial Luis Gimenez</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="dom.css"> 
+        
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="logo.png" alt="" class="logo">
+                
+            </a>
+            <ul id="botones">
+                <a style="font-family: 'Times New Roman', Times, serif ;font-size:25px ; color:aliceblue;">Agregar elementos: </a>
+                <li><a id="button" href="#">Button</a></li>
+                <li><a id="input" href="#">Input</a></li>
+                <li><a id="table" href="#">Tabla</a></li>
+                <li><a id="a" href="#">Link</a></li>
+                <li><a id="select" href="#">Select</a></li>
+            </ul>
+        </nav>
+        <div id="cuerpo">
+            <select style="visibility: hidden; height: 0px;"></select>
+            <p>Seleccionar elemento</p>
+            <select id="elemento">
+                <option value="-1">Seleccionar elemento</option>
+            </select>
+            <button id="btnEliminar">Eliminar</button>
+            <p>Elegir propiedad</p>
+            <select id="propiedades">
+                <option value="-1">Seleccionar propiedad</option>
+            </select>
+            <p>Elegir valor</p>
+            <select id="valor">
+                <option value="-1">Seleccionar valor</option>
+            </select>
+            <p>
+                <button id="btnAplicar">Aplicar estilo</button>
+            </p>
+            <hr>
+        </div>
+        
+        <div id="contenedor"></div>
+        <script src="dom.js"></script>
+    
+    </body>
+</html>
