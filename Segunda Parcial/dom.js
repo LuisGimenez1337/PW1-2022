@@ -148,7 +148,6 @@ function cargarValores() {
 
             break;
         case 'textDecoration':
-            selValores.add(new Option('overline'));
             selValores.add(new Option('underline'));
             selValores.add(new Option('line-through'));
 
