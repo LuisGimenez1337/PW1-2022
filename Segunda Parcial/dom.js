@@ -66,13 +66,63 @@ function cargarPropiedades() {
     var selElemento = document.querySelector('#elemento');
     var selPropiedades = document.querySelector('#propiedades');
     selPropiedades.innerHTML = '';
-    selPropiedades.add(new Option('Seleccionar propiedad', '-1'));
-    selPropiedades.add(new Option('Borde', 'border'));
-    selPropiedades.add(new Option('Color', 'color'));
-    selPropiedades.add(new Option('Animacion', 'animation'));
-    selPropiedades.add(new Option('Fondo', 'backgroundColor'));
-    selPropiedades.add(new Option('Tamaño fuente', 'fontSize'));
-    selPropiedades.add(new Option('Tipo de fuente', 'fontFamily'));
+    var combo = document.getElementById("elemento");
+    var selected = combo.options[combo.selectedIndex].text;
+    switch (selected) {
+            case 'button':
+                selPropiedades.add(new Option('Seleccionar propiedad', '-1'));
+                selPropiedades.add(new Option('Borde', 'border'));
+                selPropiedades.add(new Option('Color', 'color'));
+                selPropiedades.add(new Option('Animacion', 'animation'));
+                selPropiedades.add(new Option('Fondo', 'backgroundColor'));
+                selPropiedades.add(new Option('Tamaño fuente', 'fontSize'));
+                selPropiedades.add(new Option('Tipo de fuente', 'fontFamily'));
+                selPropiedades.add(new Option('Radio de Borde', 'borderRadius'));
+            break;
+            case 'input':
+                selPropiedades.add(new Option('Seleccionar propiedad', '-1'));
+                selPropiedades.add(new Option('Borde', 'border'));
+                selPropiedades.add(new Option('Color', 'color'));
+                selPropiedades.add(new Option('Animacion', 'animation'));
+                selPropiedades.add(new Option('Fondo', 'backgroundColor'));
+                selPropiedades.add(new Option('Tamaño fuente', 'fontSize'));
+                selPropiedades.add(new Option('Tipo de fuente', 'fontFamily'));
+                selPropiedades.add(new Option('Decoracion del texto', 'textDecoration'));
+                selPropiedades.add(new Option('Transformar texto', 'textTransform'));
+            break;
+            case 'table':
+                selPropiedades.add(new Option('Seleccionar propiedad', '-1'));
+                selPropiedades.add(new Option('Borde', 'border'));
+                selPropiedades.add(new Option('Color', 'color'));
+                selPropiedades.add(new Option('Animacion', 'animation'));
+                selPropiedades.add(new Option('Fondo', 'backgroundColor'));
+                selPropiedades.add(new Option('Tamaño fuente', 'fontSize'));
+                
+            break;
+            case 'a':
+                selPropiedades.add(new Option('Seleccionar propiedad', '-1'));
+                selPropiedades.add(new Option('Borde', 'border'));
+                selPropiedades.add(new Option('Color', 'color'));
+                selPropiedades.add(new Option('Animacion', 'animation'));
+                selPropiedades.add(new Option('Fondo', 'backgroundColor'));
+                selPropiedades.add(new Option('Tamaño fuente', 'fontSize'));
+                selPropiedades.add(new Option('Tipo de fuente', 'fontFamily'));
+            break;
+            case 'select':
+                selPropiedades.add(new Option('Seleccionar propiedad', '-1'));
+                selPropiedades.add(new Option('Borde', 'border'));
+                selPropiedades.add(new Option('Color', 'color'));
+                selPropiedades.add(new Option('Animacion', 'animation'));
+                selPropiedades.add(new Option('Fondo', 'backgroundColor'));
+                selPropiedades.add(new Option('Tamaño fuente', 'fontSize'));
+                selPropiedades.add(new Option('Tipo de fuente', 'fontFamily'));
+                selPropiedades.add(new Option('Mas elementos', 'more'));
+            break;
+            default:
+
+            break;
+    }
+    
 
 }
 function cargarValores() {
@@ -90,6 +140,24 @@ function cargarValores() {
             selValores.add(new Option('5px dashed green'));
             selValores.add(new Option('7px solid #ddd'));
             selValores.add(new Option('none'));
+            break;
+        case 'borderRadius':
+            selValores.add(new Option('0px'));
+            selValores.add(new Option('5px'));
+            selValores.add(new Option('10px'));
+
+            break;
+        case 'textDecoration':
+            selValores.add(new Option('overline'));
+            selValores.add(new Option('underline'));
+            selValores.add(new Option('line-through'));
+
+            break;
+        case 'textTransform':
+            selValores.add(new Option('uppercase'));
+            selValores.add(new Option('lowercase'));
+            selValores.add(new Option('capitalize'));
+
             break;
         case 'color':
             selValores.add(new Option('black'));
@@ -121,6 +189,12 @@ function cargarValores() {
                 selValores.add(new Option('Papyrus'));
                 selValores.add(new Option('Georgia'));
                 break;
+            case 'more':
+                selValores.add(new Option('1'));
+                selValores.add(new Option('2'));
+                selValores.add(new Option('3'));
+                
+                break;
 
         default:
 
@@ -141,8 +215,41 @@ function aplicarCSS() {
     if (selPropiedades.value === 'backgroundColor'){
         contenedor.children[selElemento.value].style.animation= "";
     }
+    if (selPropiedades.value === 'animation'){
+        contenedor.children[selElemento.value].style.backgroundColor= "white";
+    }
+    if (selPropiedades.value === 'more'){
+        var elemento = contenedor.children[selElemento.value].options.length;
+        switch (selValores.value) {
+            
+            case '1':
+                
+                contenedor.children[selElemento.value].add(new Option('Opcion ' + (elemento+ 1), elemento));
+                break;
+                case '2':
+                
+                contenedor.children[selElemento.value].add(new Option('Opcion ' + (elemento+ 1), elemento));
+                var elemento = contenedor.children[selElemento.value].options.length;
+                contenedor.children[selElemento.value].add(new Option('Opcion ' + (elemento+ 1), elemento));
+                break;
+                case '3':
+                
+                contenedor.children[selElemento.value].add(new Option('Opcion ' + (elemento+ 1), elemento));
+                var elemento = contenedor.children[selElemento.value].options.length;
+                contenedor.children[selElemento.value].add(new Option('Opcion ' + (elemento+ 1), elemento));
+                var elemento = contenedor.children[selElemento.value].options.length;
+                contenedor.children[selElemento.value].add(new Option('Opcion ' + (elemento+ 1), elemento));
+                break;
+
+        default:
+
+            break;
+    }
         
-       
-    contenedor.children[selElemento.value]
+    }else{
+        contenedor.children[selElemento.value]
             .style[selPropiedades.value]=selValores.value;
+    }    
+       
+    
 }
